@@ -291,10 +291,23 @@ body {
 }
 
 
+ .alert {
+     display: none;
+ }
 
+}
 
-    .alert {
-        display: none;
-    }
+/********   Landscape   *********/
+
+@media screen and (orientation: landscape) {
+
+.nav {
+    height: 32vh;
+
+}
+
+.footer {
+    height: 16vh;
+}
 
 }
