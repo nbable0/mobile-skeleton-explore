@@ -1,4 +1,24 @@
-  const colorsExamples = anime.timeline({
+  //fullscreen
+  function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen(); 
+      }
+    }
+  }
+  
+  document.addEventListener("keypress", function(e) {
+    if (e.keyCode === 13) {
+      toggleFullScreen();
+    }
+  }, false);
+  
+  
+  
+  //skeleton animation  
+const colorsExamples = anime.timeline({
     endDelay: 40,
     easing: 'easeInOutQuad',
     direction: 'alternate',
