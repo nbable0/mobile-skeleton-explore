@@ -1,20 +1,6 @@
-  //fullscreen
-  function toggleFullScreen() {
-    if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen(); 
-      }
-    }
-  }
-  
-  document.addEventListener("keypress", function(e) {
-    if (e.keyCode === 13) {
-      toggleFullScreen();
-    }
-  }, false);
-  
+if(navigator.standalone == true) {
+  // My app is installed and therefore fullscreen
+}
   
   
   //skeleton animation  
