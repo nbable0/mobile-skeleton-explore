@@ -1,8 +1,3 @@
-if(navigator.standalone == true) {
-  // My app is installed and therefore fullscreen
-}
-  
-  
   //skeleton animation  
 const colorsExamples = anime.timeline({
     endDelay: 40,
